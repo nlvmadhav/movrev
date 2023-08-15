@@ -11,5 +11,4 @@ def mainpage():
 def imax():
     print("imax")
     text = d.imax_data_rev()
-    print(text)
-    return render_template("imax.html")
+    return render_template("imax.html",data = text)
