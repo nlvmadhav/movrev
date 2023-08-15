@@ -1,4 +1,5 @@
 from flask import Flask,render_template
+import data as d
 
 app = Flask(__name__,template_folder="static_files",static_folder="templates")
 
@@ -9,4 +10,6 @@ def mainpage():
 @app.route("/imax")
 def imax():
     print("imax")
+    text = d.imax_data_rev()
+    print(text)
     return render_template("imax.html")
