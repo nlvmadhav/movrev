@@ -6,4 +6,8 @@ def imax_data_rev():
     return y
 class reviews:
     def rrr():
-        f = 'hello'
+        f = open('rr.txt','r')
+        y = ''
+        for x in f:
+            y = y+x+'\n'
+        return y
