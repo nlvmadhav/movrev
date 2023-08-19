@@ -9,6 +9,10 @@ def mainpage():
 
 @app.route("/imax")
 def imax():
-    print("imax")
     text = d.imax_data_rev()
     return render_template("imax.html",data = text)
+
+@app.route("/reviews")
+def reviews():
+    text = d.reviews.rrr()
+    return render_template("Reviews.html",data = text)
